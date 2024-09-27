@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Effervescence | Campus Ambassador</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<div class="main-container">
+			<div class="mouse-hover" id="move"></div>
+			<nav class="navbar">
+				<!-- <div class="logo-main"> -->
+				<div class="logo-cont">
+					<img class="logo" src="./logo.png" alt="effe logo" />
+					<img class="effe-logo" src="./effe_long.png" alt="effe logo" />
+				</div>
+				<!-- </div> -->
+				<!-- <div class="menu-cont"> -->
+				<ul class="menu">
+					<li><a href="./merch.html">MERCH</a></li>
+					<li><a href="./incentives.html">INCENTIVES</a></li>
+					<li><a href="./about.html">ABOUT</a></li>
+					<li><a href="#">CONTACT</a></li>
+				</ul>
+				<!-- </div> -->
+			</nav>
+			<div class="hero-section sections" id="hero" style="overflow: hidden">
+				<span class="stars"></span>
+				<span class="stars"></span>
+				<span class="stars"></span>
+				<span class="stars"></span>
+				<span class="stars"></span>
+				<span class="stars"></span>
+				<span class="stars"></span>
+				<span class="stars"></span>
+				<span class="stars"></span>
+				<span class="stars"></span>
+				<span class="stars"></span>
+				<!-- <video id="bg-vid" autoplay loop muted>
+					<source src="./bg.mp4" type="video/mp4" />
+				</video> -->
+				<div class="hero-text">
+					<h1>College Unifest Program</h1>
+					<p>Be the representative of your campus</p>
+					<div>
+						<a href="#" target="_blank" class="learn">Learn More</a>
+					</div>
+				</div>
+				<div class="content">
+					<div class="circle">
+						<button class="button button--skoll" id="apply-now">
+							<span><span>Apply Now</span></span>
+						</button>
+						<!-- <div class="logo-intern"></div> -->
+						<div class="text">
+							<p>Internship Program - Effervescence -</p>
+						</div>
+					</div>
+					<script>
+						document.getElementById("apply-now").onclick = function () {
+							window
+								.open("https://forms.gle/XRVafjny76H7uPZV7", "__blank")
+								.focus();
+						};
+					</script>
+				</div>
+			</div>
+
+			<div class="sticky-foot">
+				<div class="socials">
+					<div>
+						<a href="https://www.instagram.com/goeffervescence" target="_blank"
+							><img src="./instagram.png" alt="facebook"
+						/></a>
+					</div>
+					<div>
+						<a
+							href="https://www.linkedin.com/company/effe.iiita/"
+							target="_blank"
+						>
+							<img src="./linkedin.png" alt="linkedin"
+						/></a>
+					</div>
+				</div>
+
+				<div class="foot-text">ⓒ Effervescence by IIIT Allahabad</div>
+			</div>
+			<script src="./index.js"></script>
+		</div>
+	</body>
+</html>
