@@ -23,7 +23,13 @@
 				background-repeat: no-repeat;
 				background-size: cover;
 				position: relative;
-				overflow: scroll;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			.stars-holder {
+				overflow-y: auto;
+				overflow-x: hidden;
 			}
 			.stars-holder span {
 				position: absolute;
@@ -43,11 +49,13 @@
 			.about-text {
 				color: white;
 				position: absolute;
-				transform: translate(-50%, -50%);
-				top: 60%;
-				left: 50%;
+
 				width: 500px;
 				text-align: center;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				gap: 0.1rem;
 			}
 			.about-text h1 {
 				font-size: 4rem;
@@ -55,6 +63,7 @@
 			.about-text p {
 				font-size: 1.25rem;
 				line-height: 2rem;
+				text-align: justify;
 			}
 
 			.about-circle {
@@ -326,7 +335,7 @@
 					color: white;
 					position: absolute;
 					transform: translate(-50%, -50%);
-					top: 57%;
+					top: 50%;
 					left: 50%;
 					width: 350px;
 					text-align: center;
@@ -335,7 +344,7 @@
 					font-size: 4rem;
 				}
 				.about-text p {
-					font-size: 1.2rem;
+					font-size: 1.35rem;
 					line-height: 1.5rem;
 				}
 
@@ -391,7 +400,7 @@
 		</style>
 	</head>
 	<body>
-		<div class="stars-holder">
+		<div class="stars-holder" style="overflow: hidden">
 			<span></span>
 			<span></span>
 			<span></span>
@@ -460,29 +469,27 @@
 				<ul class="menu" id="menu">
 					<li><a href="/">HOME</a></li>
 					<li><a href="./cup.html">CUP</a></li>
-					<li><a href="./merch.html">MERCH</a></li>
+					<li><a href="./merch.html">merch</a></li>
 					<li><a href="./about.html">ABOUT</a></li>
 					<li><a href="./contact.html">CONTACT</a></li>
 				</ul>
 			</div>
 		</nav>
 		<div class="about-text">
-			<h1>About Us</h1>
+			<h1>CUP</h1>
 			<p>
-				Effervescence has solidified its position as a cornerstone of North
-				India's cultural landscape, with a legacy spanning 18 years of
-				excellence. Building upon this storied history, we are committed to
-				raising the bar even higher this year. Our stage has been graced by
-				acclaimed artists like Darshan Raval, Samay Raina, Neeti Mohan, Anubhav
-				Singh Bassi and many more in the past, creating captivating performances
-				that have left lasting impressions.
+				The <strong>Campus Ambassador Program</strong> for
+				<strong>Effervescence, IIIT Allahabad's Campus Unifest Program</strong>,
+				offers an exciting opportunity for enthusiastic students to represent
+				the fest in their colleges. As a Campus Ambassador, your primary role
+				will be to drive social media marketing and promote Effervescence
+				through various online and offline channels. You'll spread the word,
+				engage your college community, and help create buzz for one of India's
+				most vibrant cultural fests. In return, you'll enjoy exclusive benefits
+				such as certificates, merchandise, and free access to premium events,
+				along with valuable networking and leadership experience.
 			</p>
 		</div>
-
-		<div class="about-circle"></div>
-		<div class="about-circle-2"></div>
-		<div class="about-circle-3"></div>
-		<div class="about-circle-4"></div>
 
 		<div class="sticky-foot">
 			<div class="socials">

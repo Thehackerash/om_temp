@@ -17,13 +17,15 @@
 				padding: 0;
 			}
 			body {
-				height: 100vh;
+				height: 100svh;
 				width: 100vw;
 				background: url("about.jpeg");
 				background-repeat: no-repeat;
 				background-size: cover;
 				position: relative;
-				overflow: scroll;
+				display: flex;
+				justify-content: center;
+				align-items: center;
 			}
 			.stars-holder span {
 				position: absolute;
@@ -43,67 +45,29 @@
 			.about-text {
 				color: white;
 				position: absolute;
-				transform: translate(-50%, -50%);
-				top: 60%;
+				top: 50%;
 				left: 50%;
+				transform: translate(-50%, -50%);
 				width: 500px;
 				text-align: center;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+				gap: 1rem;
 			}
 			.about-text h1 {
 				font-size: 4rem;
+				font-weight: 800;
+			}
+			.about-text h2 {
+				font-weight: 500;
+				font-size: 2rem;
 			}
 			.about-text p {
+				opacity: 0.6;
 				font-size: 1.25rem;
 				line-height: 2rem;
-			}
-
-			.about-circle {
-				height: 120px;
-				width: 120px;
-				position: absolute;
-				background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREl2A3MYdK1QshoFIoDpIIoqOXjk3KccSqhg&s");
-				background-size: contain;
-				border-radius: 50%;
-				transform: translate(-50%, -50%);
-				top: 50%;
-				border: 4px white solid;
-				left: 25%;
-			}
-			.about-circle-2 {
-				height: 120px;
-				width: 120px;
-				position: absolute;
-				background: url("https://a10.gaanacdn.com/gn_img/artists/zLp36v3rGe/Lp36BL5v3r/size_m_1720183611.jpg");
-				background-size: contain;
-				border-radius: 50%;
-				border: 4px white solid;
-				transform: translate(-50%, -50%);
-				top: 70%;
-				left: 15%;
-			}
-			.about-circle-3 {
-				height: 120px;
-				width: 120px;
-				position: absolute;
-				border: 4px white solid;
-				background: url("https://i.scdn.co/image/ab6761610000e5eb357df5037e26bf16917825fc");
-				background-size: cover;
-				border-radius: 50%;
-				transform: translate(-50%, -50%);
-				top: 29%;
-				left: 71%;
-			}
-			.about-circle-4 {
-				height: 120px;
-				width: 120px;
-				position: absolute;
-				border: 4px white solid;
-				background: url("https://pbs.twimg.com/profile_images/1641508263068852225/60E1spfk_400x400.jpg");
-				background-size: cover;
-				border-radius: 50%;
-				transform: translate(-50%, -50%);
-				top: 55%;
-				left: 80%;
 			}
 
 			@keyframes animate {
@@ -321,13 +285,11 @@
 				left: 1150px;
 				animation-delay: 0.7s;
 			}
-			@media (max-width: 600px) {
+			@media (max-width: 680px) {
 				.about-text {
 					color: white;
 					position: absolute;
 					transform: translate(-50%, -50%);
-					top: 57%;
-					left: 50%;
 					width: 350px;
 					text-align: center;
 				}
@@ -338,59 +300,10 @@
 					font-size: 1.2rem;
 					line-height: 1.5rem;
 				}
-
-				.about-circle {
-					height: 100px;
-					width: 100px;
-					position: absolute;
-					background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREl2A3MYdK1QshoFIoDpIIoqOXjk3KccSqhg&s");
-					background-size: contain;
-					border-radius: 50%;
-					transform: translate(-50%, -50%);
-					top: 20%;
-					border: 4px white solid;
-					left: 38%;
-				}
-				.about-circle-2 {
-					height: 100px;
-					width: 100px;
-					position: absolute;
-					background: url("https://a10.gaanacdn.com/gn_img/artists/zLp36v3rGe/Lp36BL5v3r/size_m_1720183611.jpg");
-					background-size: contain;
-					border-radius: 50%;
-					border: 4px white solid;
-					transform: translate(-50%, -50%);
-					top: 20%;
-					left: 13%;
-				}
-				.about-circle-3 {
-					height: 100px;
-					width: 100px;
-					position: absolute;
-					border: 4px white solid;
-					background: url("https://i.scdn.co/image/ab6761610000e5eb357df5037e26bf16917825fc");
-					background-size: cover;
-					border-radius: 50%;
-					transform: translate(-50%, -50%);
-					top: 20%;
-					left: 62%;
-				}
-				.about-circle-4 {
-					height: 100px;
-					width: 100px;
-					position: absolute;
-					border: 4px white solid;
-					background: url("https://pbs.twimg.com/profile_images/1641508263068852225/60E1spfk_400x400.jpg");
-					background-size: cover;
-					border-radius: 50%;
-					transform: translate(-50%, -50%);
-					top: 20%;
-					left: 87%;
-				}
 			}
 		</style>
 	</head>
-	<body>
+	<body style="overflow: hidden">
 		<div class="stars-holder">
 			<span></span>
 			<span></span>
@@ -467,22 +380,69 @@
 			</div>
 		</nav>
 		<div class="about-text">
-			<h1>About Us</h1>
-			<p>
-				Effervescence has solidified its position as a cornerstone of North
-				India's cultural landscape, with a legacy spanning 18 years of
-				excellence. Building upon this storied history, we are committed to
-				raising the bar even higher this year. Our stage has been graced by
-				acclaimed artists like Darshan Raval, Samay Raina, Neeti Mohan, Anubhav
-				Singh Bassi and many more in the past, creating captivating performances
-				that have left lasting impressions.
-			</p>
+			<h1>Contact Us</h1>
+			<img
+				src="./shwet.png"
+				alt="shwet"
+				style="width: 8rem; border-radius: 100%; border: 2px solid white"
+			/>
+			<h2>Shwet Kumar</h2>
+			<h4
+				style="
+					position: absolute;
+					margin-bottom: -11rem;
+					font-weight: 400;
+					opacity: 0.8;
+				"
+			>
+				(Core organising team)
+			</h4>
+			<p style="margin-top: 1rem">+91 9685295033</p>
+			<div
+				style="
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					gap: 1.5rem;
+					margin-top: 1rem;
+				"
+			>
+				<a href="https://www.instagram.com/_shwettt?igsh=MWRvejJsd3B3b3htMg=="
+					><img
+						src="./instagram.png"
+						alt="insta Shwet"
+						style="
+							width: 2rem;
+							aspect-ratio: 1/1;
+							filter: invert(96%) sepia(88%) saturate(2%) hue-rotate(198deg)
+								brightness(114%) contrast(101%);
+						"
+				/></a>
+				<a
+					href="https://www.linkedin.com/in/shwet-kumar-8b797722a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+					><img
+						src="./linkedin.png"
+						alt="linkedin Shwet"
+						style="
+							width: 2rem;
+							aspect-ratio: 1/1;
+							filter: invert(96%) sepia(88%) saturate(2%) hue-rotate(198deg)
+								brightness(114%) contrast(101%);
+						"
+				/></a>
+				<a href="mailto:shwetkumar69@gmail.com"
+					><img
+						src="./email.png"
+						alt="email Shwet"
+						style="
+							width: 2rem;
+							aspect-ratio: 1/1;
+							filter: invert(96%) sepia(88%) saturate(2%) hue-rotate(198deg)
+								brightness(114%) contrast(101%);
+						"
+				/></a>
+			</div>
 		</div>
-
-		<div class="about-circle"></div>
-		<div class="about-circle-2"></div>
-		<div class="about-circle-3"></div>
-		<div class="about-circle-4"></div>
 
 		<div class="sticky-foot">
 			<div class="socials">
